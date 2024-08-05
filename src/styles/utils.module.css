@@ -1,0 +1,283 @@
+.w500 {
+  font-family: "satoshi-med", sans-serif;
+}
+.w600 {
+  font-family: "satoshi-variable", sans-serif;
+}
+.w700 {
+  font-family: "satoshi-bold", sans-serif;
+}
+.sw500 {
+  font-family: "sentinent-med", sans-serif;
+}
+.sw600 {
+  font-family: "sentinent-variable", sans-serif;
+}
+.sw700 {
+  font-family: "sentinent-bold", sans-serif;
+}
+
+.btn1 {
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 0.6rem;
+}
+
+.btn2 {
+  outline: none;
+  border: 1px solid var(--bg-brown);
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-brown);
+  color: #ffffff;
+  gap: 0.6rem;
+}
+
+.btn2 svg {
+  color: var(--white);
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  padding: 2rem 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.errors {
+  color: #f73032;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0.8rem;
+  /* font-size: 0.875rem; */
+}
+
+@media screen and (max-width: 1280px) {
+  .s56 {
+    font-size: 3rem;
+  }
+  .s48 {
+    font-size: 2.5rem;
+  }
+  .s40 {
+    font-size: 2.25rem;
+  }
+  .s36 {
+    font-size: 1.75rem;
+  }
+  .s32 {
+    font-size: 1.6rem;
+  }
+  .s24 {
+    font-size: 1.5rem;
+  }
+  .s20 {
+    font-size: 1.25rem;
+  }
+  .s18 {
+    font-size: 1.125rem;
+  }
+  .s12 {
+    font-size: 0.75rem;
+  }
+  .s14 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .s56 {
+    font-size: 2.5rem;
+  }
+  .s48 {
+    font-size: 2.25rem;
+  }
+  .s40 {
+    font-size: 2rem;
+  }
+  .s36 {
+    font-size: 1.5rem;
+  }
+  .s32 {
+    font-size: 1.25rem;
+  }
+  .s24 {
+    font-size: 1.375rem;
+  }
+  .s20 {
+    font-size: 1.125rem;
+  }
+  .container {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s56 {
+    font-size: 2rem;
+  }
+  .s48 {
+    font-size: 2rem;
+  }
+  .s40 {
+    font-size: 1.75rem;
+  }
+  .s36 {
+    font-size: 1.25rem;
+  }
+  .s32 {
+    font-size: 1.2rem;
+  }
+  .s24 {
+    font-size: 1.125rem;
+  }
+  .s20 {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .s56 {
+    font-size: 3.5rem;
+  }
+  .s48 {
+    font-size: 3rem;
+  }
+  .s40 {
+    font-size: 2.5rem;
+  }
+  .s36 {
+    font-size: 2rem;
+  }
+  .s32 {
+    font-size: 1.75rem;
+  }
+  .s24 {
+    font-size: 1.625rem;
+  }
+  .s20 {
+    font-size: 1.375rem;
+  }
+  .s18 {
+    font-size: 1.375rem;
+  }
+  .s14 {
+    font-size: 1rem;
+  }
+  .s12 {
+    font-size: 0.875rem;
+  }
+  .btn1 {
+    padding: 10px 16px;
+  }
+  .btn2 {
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .s56 {
+    font-size: 3.75rem;
+  }
+  .s48 {
+    font-size: 3.25rem;
+  }
+  .s40 {
+    font-size: 2.75rem;
+  }
+  .s36 {
+    font-size: 2.25rem;
+  }
+  .s24 {
+    font-size: 1.75rem;
+  }
+  .s20 {
+    font-size: 1.5rem;
+  }
+  .s14 {
+    font-size: 1.125rem;
+  }
+  .s12 {
+    font-size: 1rem;
+  }
+  .btn1 {
+    gap: 0.6rem;
+  }
+  .btn2 {
+    gap: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .s56 {
+    font-size: 4rem;
+  }
+  .s48 {
+    font-size: 3.5rem;
+  }
+  .s40 {
+    font-size: 3rem;
+  }
+  .s36 {
+    font-size: 2.5rem;
+  }
+  .s24 {
+    font-size: 1.875rem;
+  }
+  .s20 {
+    font-size: 1.625rem;
+  }
+  .s14 {
+    /* font-size: 1.375rem; */
+  }
+  .s12 {
+    font-size: 1.125rem;
+  }
+}
+
+/* 
+@media screen and (min-width: 1921px) {
+    .s56 {
+        font-size: 4.25rem;
+    }
+    .s36 {
+        font-size: 2.75rem;
+    }
+    .s48 {
+        font-size: 3.75rem;
+    }
+    .s24 {
+        font-size: 2rem;
+    }
+    .s18 {
+        font-size: 1.625rem;
+    }
+    .s20 {
+        font-size: 1.75rem;
+    }
+    .s14 {
+        font-size: 1.375rem;
+    }
+    .s12 {
+        font-size: 1.25rem;
+    }
+} */

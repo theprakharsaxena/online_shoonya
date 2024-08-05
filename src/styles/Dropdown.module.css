@@ -1,0 +1,92 @@
+.customDropdown {
+  position: relative;
+  min-width: 8rem;
+  display: flex;
+  justify-content: center;
+}
+.customDropdown5Styles {
+  min-width: 5rem !important;
+}
+
+.valueOption {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.dropdownHeader {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.downArrow {
+  transform: rotate(90deg);
+}
+.valueOption input[type="checkbox"] {
+  margin-right: 8px;
+  display: none;
+}
+
+.valueOption label {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  /* flex-wrap: nowrap; */
+  cursor: pointer;
+}
+
+/* Styling for the custom checkbox */
+.valueOption input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #1c274c; /* Border color */
+  background-color: #fff; /* Background color */
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+/* Styling for the tick mark */
+.valueOption input[type="checkbox"]:checked + label::before {
+  content: "\2713";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 11px;
+  color: #fff7e3; /* Color of the tick mark */
+  background-color: #1c274c; /* Background color behind the tick mark */
+  border-radius: 3px;
+}
+
+.dropdownContent {
+  position: absolute;
+  background-color: var(--bg-yellow);
+  border-radius: 0.4rem;
+  top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.4rem; */
+  cursor: pointer;
+  padding: 0.4rem;
+  max-height: 16rem;
+  overflow-y: scroll;
+  z-index: 999;
+}
+
+@media screen and (max-width: 1024px) {
+  .customDropdown {
+    justify-content: unset;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .selectExtra {
+    padding: 0.6rem 0.8rem !important;
+  }
+}

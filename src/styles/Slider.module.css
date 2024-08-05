@@ -1,0 +1,56 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 900px;
+    width: 550px;
+}
+
+.carouselCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes slide1 {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.carouselTrack1 {
+    animation: 90s slide1 infinite linear;
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.carouselTrack2 {
+    animation: 90s slide2 infinite linear;
+}
+
+.image {
+    width: 248.841px;
+    height: 150.852px;
+    border-radius: 12px;
+}
+
+@media screen and (min-width: 1921px) {
+    .carouselContainer {
+        height: 1000px;
+    }
+}

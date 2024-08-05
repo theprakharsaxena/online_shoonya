@@ -1,0 +1,107 @@
+.aboutStatsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.aboutStatsContainer {
+    width: 100%;
+    display: flex;
+    padding: 3rem 4rem 2rem 4rem;
+    gap: 1rem;
+    color: var(--text-blue);
+    max-width: 100rem;
+}
+.aboutStatsHeaderDiv {
+    width: 50%;
+}
+.aboutStatsHeader {
+    font-family: "satoshi-variable", sans-serif;
+}
+
+.aboutStatsInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aboutStatsInfoDesc {
+    font-size: 1.125rem;
+    font-family: "satoshi-regular", sans-serif;
+}
+.aboutStatsInfoData {
+    display: flex;
+    padding: 2rem 4rem 2rem 4rem;
+    gap: 2rem;
+    background-color: #f3f3f3;
+    max-width: 92rem;
+    text-align: center;
+}
+.statsData p:nth-of-type(1) {
+    font-family: "satoshi-variable", sans-serif;
+}
+.statsData p:nth-of-type(2) {
+    font-family: "satoshi-regular", sans-serif;
+}
+.statsData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 33.33%;
+}
+@media screen and (max-width: 768px) {
+    .aboutStatsContainer {
+        flex-direction: column;
+        padding: 0 2.5rem 2rem 2.5rem;
+    }
+    .aboutStatsInfoData {
+        flex-direction: column;
+    }
+    .aboutStatsHeaderDiv,
+    .aboutStatsInfo {
+        width: 100%;
+    }
+    .aboutStatsInfoDesc {
+        font-size: 1rem;
+    }
+    .aboutStatsContainer {
+        padding: 0 3rem 2rem 3rem;
+    }
+    .statsData {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutStatsContainer {
+        padding: 0 1.625rem 3rem 1.625rem;
+    }
+    .aboutStatsContainer {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .aboutStatsInfoDesc {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .aboutStatsInfoDesc {
+        font-size: 1.375rem;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+    .aboutStatsInfoDesc {
+        font-size: 1.625rem;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+    .aboutStatsInfoDesc {
+        font-size: 1.75rem;
+    }
+}

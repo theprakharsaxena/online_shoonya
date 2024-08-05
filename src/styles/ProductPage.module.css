@@ -1,0 +1,357 @@
+.productMain {
+  padding: 0 5rem;
+}
+
+.productHeader {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.productHeaderTop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.productHeaderTopWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.productHeaderTopLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.productHeaderNavigation {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.productHeaderNavigation img {
+  height: 1.2rem;
+}
+.productRatingDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1.2rem;
+}
+.productOwnerProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.productOwnerProfile img {
+  height: 2rem;
+  border-radius: 50%;
+}
+.productRatingInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.productRatingInfo img {
+  height: 1rem;
+}
+.ratingNo {
+  font-size: 0.875rem;
+}
+.wishlistBtn {
+  border-radius: 0.8rem;
+  border: 1px solid var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.wishlistTxt {
+  /* font-size: 1.125rem; */
+  font-family: "satoshi-bold", sans-serif;
+  color: var(--gray);
+}
+
+.productHeaderTopRight {
+  display: flex;
+  align-items: center;
+}
+.productImgDiv {
+  position: relative;
+}
+.productImgDiv img {
+  border-radius: 1.2rem;
+}
+.liveSessionsDiv {
+  display: flex;
+  gap: 0.4rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+}
+.liveSessionsDiv p {
+  text-wrap: nowrap;
+  font-size: 0.75rem;
+}
+.productContentInfoWrapper {
+  width: 30%;
+}
+.productContentInfo {
+  padding: 1.6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  border-radius: 0.8rem;
+  height: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productPriceExtra {
+  flex-direction: column;
+  align-items: initial;
+  gap: 0.6rem;
+}
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.discountDiv {
+  padding: 0.2rem;
+  background-color: #a04ae3;
+  border-radius: 0.4rem;
+  width: fit-content;
+}
+.discountDiv p {
+  color: #ffffff;
+  font-family: "satoshi-variable", sans-serif;
+}
+.productContentInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.productContentInfoItem {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* ******************************* */
+.productMain {
+  display: flex;
+}
+.productMainExtra {
+  gap: 1rem;
+}
+.productImgDiv {
+  width: 70%;
+  max-height: 30rem;
+}
+.productImgDiv img {
+  width: 100%;
+  max-height: 30rem;
+  object-fit: cover;
+}
+
+.buyBtn {
+  background-color: #453736;
+  color: #ffffff;
+  border-radius: 1rem;
+  margin-top: 0.4rem;
+  padding: 0.8rem;
+}
+.buyBtn p {
+  font-family: "satoshi-bold", sans-serif;
+}
+.newPriceExtra {
+  font-size: max(2vw, 1.2rem);
+}
+.originalPriceExtra {
+  font-size: max(1.8vw, 1rem);
+}
+
+/* ******************************** */
+.links {
+  display: flex;
+  gap: 1.4rem;
+  padding: 1.4rem 0;
+  color: var(--text-blue);
+}
+.links p {
+  cursor: pointer;
+}
+.reviewSection {
+  padding: 0 0 2rem 0 !important;
+}
+.courseSection,
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 0.4rem 0 2rem 0;
+  width: 70%;
+}
+.courseBenefits {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #f4f3f3;
+  border-radius: 1rem;
+}
+.courseBenefitTitle {
+  font-family: "satoshi-bold", sans-serif;
+}
+.courseBenefitsDesc {
+  color: var(--gray);
+}
+.reviewSection {
+  padding: 0.8rem 0 2rem 0;
+}
+.reviewItem {
+  display: flex;
+  gap: 0.8rem;
+}
+.reviewItem img {
+  height: 2rem;
+  border-radius: 50%;
+}
+.reviewInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.reviewPerson {
+  font-family: "satoshi-bold", sans-serif;
+}
+.reviewDesc {
+  color: var(--gray);
+}
+.reviewBtnDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.linksSection {
+  margin-top: 1rem;
+}
+.link_hr {
+  display: flex;
+  flex-direction: column;
+}
+.link_hr p {
+  color: #ccd1d8;
+}
+.linkHrLink {
+  content: "";
+  background: var(--text-blue);
+  width: 100%;
+  height: 2.4px;
+  border-radius: 1rem;
+}
+.activeLink {
+  font-family: "satoshi-med", sans-serif;
+  color: var(--text-blue) !important;
+}
+.star_icon {
+  font-size: 22px;
+}
+@media screen and (max-width: 1024px) {
+  .productMain {
+    padding: 0 4rem;
+    flex-direction: column;
+  }
+  .productImgDiv,
+  .productContentInfoWrapper {
+    width: 100%;
+  }
+  .courseSection,
+  .reviewSection {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productMain {
+    padding: 0 3rem;
+  }
+  .wishlistTxt {
+    font-size: 1rem;
+  }
+  .productTitle {
+    font-size: max(3vw, 1.4rem);
+  }
+  .productRatingDiv {
+    flex-wrap: wrap;
+  }
+  .courseSection,
+  .reviewSection {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .productHeaderTopWrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .productMain {
+    padding: 0 2rem;
+  }
+  /* .wishlistTxt {
+    font-size: 0rem;
+  } */
+  .productContentInfo {
+    padding: 1.6rem 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .ratingNo {
+    font-size: 1rem;
+  }
+  .productHeaderNavigation img {
+    height: 1.4rem;
+  }
+  .newPriceExtra {
+    font-size: min(3vw, 1.4rem) !important;
+  }
+  .originalPriceExtra {
+    font-size: min(2.6vw, 1.2rem);
+  }
+  .productTitle {
+    font-size: min(4vw, 1.8rem);
+  }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+  .ratingNo {
+    font-size: 1.125rem;
+  }
+  .productHeaderNavigation img {
+    height: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .ratingNo {
+    font-size: 1.25rem;
+  }
+  .productHeaderNavigation img {
+    height: 1.8rem;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+  .ratingNo {
+    font-size: 1.375rem;
+  }
+  .productHeaderNavigation img {
+    height: 2rem;
+  }
+}

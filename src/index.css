@@ -1,0 +1,470 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-brown: #453736;
+  --bg-yellow: #fff7e3;
+  --text-blue: #1b3252;
+  --l-gray: #f4f4f4;
+  --gray: #7c7c7c;
+  --Brand-colors-Base: #e0d9cf;
+  --add-ons-base: #fff7e3;
+}
+/* .blend-effect {
+  position: relative;
+  overflow: hidden;
+} */
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  height: 300px;
+  width: 300px;
+}
+
+/* ---------- Central Image ---------- */
+#central-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  width: 150px;
+  height: 150px;
+  border: 1px var(--bg-brown) dotted;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+}
+
+#inner-orbit-1 {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  width: 188px;
+  height: 188px;
+  border: 1px var(--bg-brown) dotted;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.inner-orbit-cirlces {
+  position: absolute;
+  top: 105px;
+  left: -6px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-image: url("/about/ellipse.webp");
+  background-size: cover;
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 225px;
+  height: 225px;
+  border: 1px var(--bg-brown) dotted;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+}
+
+#middle-orbit-2 {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 260px;
+  height: 260px;
+  border: 1px var(--bg-brown) dotted;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.middle-orbit-cirlces {
+  position: absolute;
+  /* 37 */
+  top: -20px;
+  /* 23 */
+  left: 17px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-image: url("/about/ellipse1.webp");
+  background-size: cover;
+}
+
+/* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+#outer-orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 294px;
+  height: 294px;
+  border: 1px var(--bg-brown) dotted;
+  border-radius: 100%;
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 20s linear infinite;
+}
+
+/* ---------- Repeating styles for the outer orbiting circles ---------- */
+.outer-orbit-cirlces {
+  position: absolute;
+  /* 42 */
+  top: -40px;
+  /* 108 */
+  left: 125px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-image: url("/about/ellipse2.webp");
+  background-size: cover;
+}
+
+/* ---------- Animation ---------- */
+/* Standard keyframes */
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Vendor-prefixed keyframes */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin-right {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin-right {
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin-right {
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+
+.blend-effect-top {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+}
+
+.blend-effect-bottom {
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+}
+
+.text-shadow-custom {
+  text-shadow: 1px 1px 2px #000;
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+}
+
+.animated-text {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4.5s steps(30, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.font-sentinent {
+  font-family: "sentinent-regular", sans-serif;
+}
+
+.font-satoshi {
+  font-family: "satoshi-regular", sans-serif;
+}
+
+@keyframes slide1 {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slide1 {
+  animation: 90s slide1 infinite linear;
+}
+
+.animate-slide2 {
+  animation: 90s slide2 infinite linear;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@font-face {
+  font-family: "satoshi-light";
+  src: url("./assets/Fonts/Satoshi/WEB/fonts/Satoshi-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "satoshi-regular";
+  src: url("./assets/Fonts/Satoshi/WEB/fonts/Satoshi-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "satoshi-variable";
+  src: url("./assets/Fonts/Satoshi/WEB/fonts/Satoshi-Variable.woff2")
+    format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "satoshi-med";
+  src: url("./assets/Fonts/Satoshi/WEB/fonts/Satoshi-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "satoshi-bold";
+  src: url("./assets/Fonts/Satoshi/WEB/fonts/Satoshi-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "sentinent-light";
+  src: url("./assets/Fonts/Sentinent/Fonts/WEB/fonts/Sentient-Light.woff2")
+    format("woff2");
+  font-weight: 300; /* Adjusted font weight */
+}
+
+@font-face {
+  font-family: "sentinent-regular";
+  src: url("./assets/Fonts/Sentinent/Fonts/WEB/fonts/Sentient-Regular.woff2")
+    format("woff2");
+  /* No need for font weight here */
+}
+
+@font-face {
+  font-family: "sentinent-med";
+  src: url("./assets/Fonts/Sentinent/Fonts/WEB/fonts/Sentient-Medium.woff2")
+    format("woff2");
+  font-weight: 500; /* Adjusted font weight */
+}
+
+@font-face {
+  font-family: "sentinent-variable";
+  src: url("./assets/Fonts/Sentinent/Fonts/WEB/fonts/Sentient-Variable.woff2")
+    format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "sentinent-bold";
+  src: url("./assets/Fonts/Sentinent/Fonts/WEB/fonts/Sentient-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "satoshi-regular", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  color: var(--text-blue);
+}
+
+a {
+  text-decoration: none;
+}
+button,
+li {
+  cursor: pointer;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p,
+a,
+button,
+select {
+  font-size: 1rem;
+}
+input {
+  padding: 0.8rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  p,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  p,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1281px) {
+  p,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+  }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+  p,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  p,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+  p,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 1.375rem;
+  }
+}

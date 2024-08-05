@@ -1,0 +1,39 @@
+.carouselContainer {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 180px;
+    width: 100%;
+}
+
+.carouselCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.carouselTrack2 {
+    display: flex;
+    animation: 50s slide2 infinite linear;
+}
+
+.image {
+    width: 248.841px;
+    height: 150.852px;
+    border-radius: 12px;
+}

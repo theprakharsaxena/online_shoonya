@@ -1,0 +1,35 @@
+.dropdownHeaderExtra {
+  width: 100%;
+}
+.customDropdownExtra {
+  width: 50%;
+}
+.select {
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 1px solid #d0d5dd;
+  padding: 0.3rem 0.4rem;
+  justify-content: space-between;
+}
+.placeholder {
+  color: #d3d6dc;
+}
+.valueItem {
+  color: #757575;
+  cursor: pointer;
+}
+.activePlaceholder {
+  color: black;
+}
+.placeholder3 {
+  font-family: "satoshi-med", sans-serif;
+  color: var(--text-blue);
+}
+.dropdownContentExtra {
+  top: 2.6rem;
+}
+@media screen and (max-width: 480px) {
+  .customDropdownExtra {
+    width: 100%;
+  }
+}

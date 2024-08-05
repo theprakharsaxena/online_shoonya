@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #d9d9d9;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    max-width: 92rem;
+}
+.heading {
+    font-family: "satoshi-med", sans-serif;
+}
+.subHeading {
+    color: #706767;
+}
+.paymentMethod {
+    margin-top: 1rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.paymentMethod p {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    color: #14a800;
+}
+.methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* align-items: center; */
+    margin-top: 1rem;
+}
+.method {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.img {
+    width: 6rem;
+}

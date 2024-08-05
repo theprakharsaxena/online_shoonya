@@ -1,0 +1,46 @@
+.sliderWrapper {
+    padding: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+.sliderContainer {
+    width: fit-content;
+    width: 380vw;
+    display: flex;
+}
+
+/* Slider track */
+.slideTrack {
+    display: flex;
+    animation: slideAnimation 35s linear infinite;
+    gap: 30px;
+}
+
+/* Individual slide item */
+
+/* Text styling */
+.slideText {
+    overflow: hidden;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.slideText h1 {
+    color: #ecebeb;
+    font-family: "satoshi-", sans-serif;
+    font-size: 50px;
+}
+.slideImage img {
+    width: 3.4rem;
+}
+
+/* Animation keyframes */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

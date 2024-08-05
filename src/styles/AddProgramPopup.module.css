@@ -1,0 +1,260 @@
+.popupDivExtra {
+  text-align: left;
+  max-height: 95vh;
+  overflow-y: scroll;
+  padding: 2rem 2rem 1.2rem 2rem;
+}
+.popupDivExtra::-webkit-scrollbar {
+  display: none;
+}
+.popupFormMain {
+  border: 1px solid #dedede;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.6rem;
+  color: var(--text-blue);
+}
+.popupFormMain label p {
+  font-family: "satoshi-bold", sans-serif;
+}
+.label_input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.price_lang {
+  display: flex;
+  gap: 0.6rem;
+}
+.popupFormMain input,
+textarea {
+  border: 1px solid #d0d5dd;
+  padding: 0.4rem 0.6rem;
+  outline: none;
+  width: 100%;
+  border-radius: 0.4rem;
+}
+.popupFormMain textarea {
+  resize: none;
+}
+.min_max {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.popupFormMain input::placeholder,
+textarea::placeholder {
+  color: #d3d6dc;
+}
+
+.div50 {
+  width: 50%;
+}
+.courseSubheading {
+  color: #344054;
+}
+.dragndropContainerExtra {
+  margin-top: 0.6rem;
+}
+.drop_input {
+  display: flex;
+  gap: 0.4rem;
+}
+.drop_input input {
+  width: 80%;
+}
+.items {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.item {
+  width: fit-content;
+  display: flex;
+  gap: 0.4rem;
+  border-radius: 0.9rem;
+  padding: 0.4rem;
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+.item p {
+  font-family: "satoshi-med", sans-serif;
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+
+.stepDivExtra {
+  gap: 0.4rem;
+}
+.progressBarDiv {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.stepNameExtra {
+  font-family: "satoshi-bold", sans-serif;
+  color: #c9c9c9;
+}
+.stepNameExtraActive {
+  color: var(--text-blue);
+}
+
+.addBtn {
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  gap: 0.4rem;
+  border-radius: 0.6rem;
+  border: 2px solid #c9c9c9;
+}
+.addBtn p {
+  color: #c9c9c9;
+}
+.labelInput_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.weekBtn {
+  border-radius: 0.5rem;
+  background-color: var(--text-blue);
+  background-color: var(--text-blue);
+}
+.weekBtn p {
+  font-family: "satoshi-med", sans-serif;
+  color: #ffffff;
+}
+.week_addBtn {
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.week {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: space-between;
+}
+.timingDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.timingDiv input {
+  width: fit-content;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.margin {
+  margin-top: 0.4rem;
+}
+.benefitsInputGap {
+  gap: 0.6rem;
+}
+.successMsg {
+  text-align: center;
+}
+.flex_gap {
+  display: flex;
+  gap: 0.4rem;
+  width: 100%;
+}
+.input_error_wrapper {
+  width: 100%;
+}
+.colorGray {
+  color: #afafaf;
+}
+.auto_div {
+  flex: auto;
+}
+.lessonDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dateDiv {
+  flex: auto;
+}
+.popupFormMain {
+  position: relative;
+}
+.removeIconDiv {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  cursor: pointer;
+}
+.start_end_date {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+.dateInput {
+  width: 100% !important;
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .popupDivExtra {
+    width: max(26rem, 75%);
+  }
+}
+@media screen and (max-width: 580px) {
+  .price_lang {
+    flex-direction: column;
+  }
+  .div50 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .popupDivExtra {
+    padding: 2rem 1.4rem 1.2rem 1.4rem;
+    width: 85%;
+  }
+  .timingDiv {
+    gap: 0.6rem;
+  }
+  .dateDiv {
+    flex-direction: column;
+  }
+  .start_end_date {
+    width: 100%;
+  }
+  .start_end_date_div {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1281px) {
+  .popupFormMain {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .popupFormMain input,
+  textarea {
+    padding: 0.6rem 0.8rem;
+  }
+  .label_input {
+    gap: 0.6rem;
+  }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+}
+
+@media screen and (min-width: 1601px) {
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+}

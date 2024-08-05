@@ -1,0 +1,243 @@
+.heading {
+  font-family: "sentinent-med", sans-serif;
+  width: 100%;
+}
+.headerSection,
+.benefitSection,
+.imgSection,
+.stepsSection {
+  max-width: 100rem;
+}
+.headerSection {
+  padding: 1rem 4rem;
+  display: flex;
+  gap: 1rem;
+}
+.headerSectionLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.headerSectionRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.headerSectionRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 40rem;
+}
+.headerBtns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.applyLink {
+  color: white;
+}
+.stepsSection {
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.stepSectionHeading {
+  font-size: 2.5rem;
+  font-family: "satoshi-bold", sans-serif;
+  text-align: center;
+}
+.subheading {
+  font-size: 1.125rem;
+  font-family: "satoshi-med", sans-serif;
+}
+.steps {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  max-width: 20rem;
+  min-width: 16rem;
+}
+.step img {
+  width: 2.5rem;
+}
+.stepsSubheading {
+  text-align: center;
+}
+.stepsHeading {
+  font-size: 1.5rem;
+  font-family: "satoshi-bold", sans-serif;
+  text-align: center;
+}
+.benefitSection {
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefitSectionWrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.questionWrapper {
+  width: 100% !important;
+}
+.benefitHeading {
+  text-align: center;
+}
+.benefitSubheading1 {
+  font-family: "satoshi-med", sans-serif;
+}
+.benefitSubheading2 {
+  text-align: center;
+  font-family: "satoshi-regular", sans-serif;
+}
+.imgSection img {
+  max-height: 36rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+  .stepSectionHeading {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerSection {
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .headerSectionLeft,
+  .headerSectionRight {
+    width: 100%;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .stepSectionHeading {
+    font-size: 2rem;
+  }
+  .stepsSection {
+    padding: 3rem 2rem;
+  }
+  .steps {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .stepsHeading {
+    font-size: 1.375rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .benefitSectionWrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .headerSection {
+    padding: 1rem 2rem;
+  }
+  .stepSectionHeading {
+    font-size: 1.5rem;
+  }
+
+  .stepsHeading {
+    font-size: 1.125rem;
+  }
+  .benefitSectionWrapper {
+    width: 100%;
+  }
+  .benefitSection {
+    padding: 3rem 2rem;
+  }
+  .stepsSection {
+    gap: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .subheading {
+    font-size: 1.25rem;
+  }
+  .stepsHeading {
+    font-size: 1.62rem;
+  }
+  .steps {
+    gap: 3rem;
+  }
+  .stepSectionHeading {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .step {
+    max-width: 28rem;
+  }
+  .subheading {
+    font-size: 1.375rem;
+  }
+  .stepsHeading {
+    font-size: 1.75rem;
+  }
+  .stepSectionHeading {
+    font-size: 3rem;
+  }
+  .imgSection img {
+    max-height: 42rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .subheading {
+    font-size: 1.5rem;
+  }
+  .stepsHeading {
+    font-size: 1.875rem;
+  }
+  .stepSectionHeading {
+    font-size: 3.25rem;
+  }
+  .imgSection img {
+    max-height: 46rem;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+  .subheading {
+    font-size: 1.625rem;
+  }
+  .stepsHeading {
+    font-size: 2rem;
+  }
+  .stepSectionHeading {
+    font-size: 3.5rem;
+  }
+  .imgSection img {
+    max-height: 50rem;
+  }
+}

@@ -1,0 +1,5 @@
+.teamMemberCards {
+    overflow: initial;
+    flex-wrap: wrap;
+    justify-content: center;
+}

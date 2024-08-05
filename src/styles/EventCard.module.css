@@ -1,0 +1,113 @@
+.eventCard {
+    min-width: 350px;
+    width: 350px;
+    min-height: 420px;
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.imgSection {
+    height: 240px;
+}
+.imgSection img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.cat_min {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cat_min p {
+    font-size: 0.875rem;
+}
+.cat_min p:nth-of-type(1) {
+    background-color: var(--l-gray);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+    margin-top: -5px;
+}
+.infoSectionTitle {
+    font-family: "satoshi-variable", sans-serif;
+    font-size: 1.5rem;
+}
+.infoSection p:nth-of-type(2) {
+    font-family: "satoshi-regular", sans-serif;
+}
+.dirSections {
+    display: flex;
+    align-items: center;
+}
+.dirSections a {
+    text-decoration: none;
+    color: var(--text-blue);
+}
+.dirSections p {
+    font-family: "satoshi-regular", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .infoSectionTitle {
+        font-size: 1.375rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .eventCard {
+        min-width: 80vw;
+        width: 80vw;
+    }
+    .infoSectionTitle {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 1281px) {
+    .cat_min p {
+        font-size: 1rem;
+    }
+    .infoSectionTitle {
+        font-size: 1.5rem;
+    }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+    .cat_min p {
+        font-size: 1.125rem;
+    }
+    .infoSectionTitle {
+        font-size: 1.625rem;
+    }
+    .eventCard {
+        min-width: 26rem;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+    .cat_min p {
+        font-size: 1.25rem;
+    }
+    .infoSectionTitle {
+        font-size: 1.75rem;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+    .cat_min p {
+        font-size: 1.375rem;
+    }
+    .infoSectionTitle {
+        font-size: 1.875rem;
+    }
+}

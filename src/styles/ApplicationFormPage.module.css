@@ -1,0 +1,383 @@
+.mainContainer {
+  color: var(--text-blue);
+}
+.progressSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.headerSection {
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.heading {
+  font-family: "sentinent-variable", sans-serif;
+  text-align: center;
+}
+.progressLine {
+  content: "";
+  height: 0.3rem;
+  border-radius: 5rem;
+  width: 100%;
+  min-width: 5rem;
+  max-width: 8rem;
+  background-color: #e6e6e6;
+}
+.progressLineActive {
+  background-color: var(--text-blue);
+}
+.progressNoDiv {
+  color: var(--gray);
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  color: #b8b8b8;
+}
+.stepName {
+  text-wrap: nowrap;
+  font-family: "satoshi-med", sans-serif;
+}
+.progressNoActive {
+  color: #ffffff;
+  background-color: var(--text-blue);
+}
+.stepDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.subHeading {
+  text-align: center;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 30rem;
+}
+.formSection input,
+.formSection select {
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 1px solid #d0d5dd;
+}
+.formSection input::placeholder,
+.formSection select::placeholder {
+  color: #d3d6dc;
+}
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  border: 2px solid #f3f3f3;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+}
+.formSection select {
+  padding: 0.4rem;
+  /* font-size: 1rem; */
+}
+.inputFileDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input_err {
+  width: 100%;
+}
+.profileImgBtn {
+  border: 1px solid #d0d5dd;
+  border-radius: 0.4rem;
+  display: flex;
+  gap: 1rem;
+}
+.profileImgBtn p {
+  color: #d3d6dc;
+}
+.inputFileDiv input {
+  width: 100%;
+}
+.nameDiv {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.nameDiv div {
+  width: 50%;
+}
+.labelInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.labelInput label p {
+  font-family: "satoshi-med", sans-serif;
+}
+.labelInput2 {
+  display: flex;
+  gap: 0.4rem;
+}
+.buttonDiv {
+  margin-bottom: 3rem;
+}
+.step2Heading {
+  font-family: "satoshi-bold", sans-serif;
+}
+.docInput {
+  width: 50%;
+}
+.asans {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.heading_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.dragndropFilesDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.dragndropContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d0d5dd;
+  padding: 1rem;
+  width: 100%;
+  gap: 0.6rem;
+  border-radius: 0.4rem;
+}
+.uploadIconDiv {
+  width: 1.5rem;
+}
+.selectBtn {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #0061ff;
+}
+.fileHeading {
+  color: #d3d6dc;
+  text-align: center;
+}
+.lineAlert {
+  background-color: #fafbfc;
+  border: 1px solid #d5c6c6;
+  border-radius: 0.6rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0.6rem 0.6rem 1rem;
+  align-items: center;
+}
+.crossIconDiv {
+  margin-bottom: -0.3rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  cursor: pointer;
+}
+.crossIconDiv img {
+  width: 100%;
+}
+.lineAlert p,
+span {
+  font-family: "satoshi-bold", sans-serif;
+}
+.lineAlert span {
+  color: #ff1d1d;
+}
+.submitImgDiv {
+  width: 9.375rem;
+  height: 8.938rem;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+}
+.submitImgDiv img {
+  width: 100%;
+  height: 100%;
+}
+.applicationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step4Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.submitHeading {
+  font-family: "satoshi-bold", sans-serif;
+  text-align: center;
+}
+.submitSubHeading {
+  color: #6f6c90;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.privacyChecks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.privacyCheck {
+  display: flex;
+}
+.termsSpan {
+  color: var(--bg-brown);
+}
+.applyBtn {
+  padding: 0.5rem 2rem;
+}
+.customCheckbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.customCheckboxLabel {
+  position: relative;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.customCheckboxIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--text-blue);
+  border-radius: 0.3rem;
+}
+
+.customCheckboxLabel p {
+  margin-left: 30px;
+}
+
+.customCheckbox:checked + .customCheckboxLabel .customCheckboxIndicator::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.countdownTxt {
+  color: #6f6c8f;
+  margin-top: 1rem;
+}
+.errors_margin {
+  margin-top: -6px;
+}
+.passInput {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .progressLine {
+    min-width: 2.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .progressLine {
+    width: 8vw;
+    min-width: unset;
+  }
+  .stepName {
+    display: none;
+  }
+  .formSection {
+    min-width: 23rem;
+    width: unset;
+  }
+  .submitImgDiv {
+    width: 8.375rem;
+    height: 7.938rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .progressLine {
+    width: 6vw;
+  }
+  .progressSection {
+    gap: 0.7rem;
+  }
+  .progressNoDiv {
+    height: 2rem;
+    width: 2rem;
+  }
+  .formSection {
+    min-width: unset;
+    gap: 1rem;
+    width: 95%;
+  }
+  .nameDiv {
+    flex-direction: column;
+  }
+  .nameDiv div {
+    width: 100%;
+  }
+  .labelInput2 {
+    flex-direction: column;
+  }
+  .docInput {
+    width: 100%;
+  }
+  .lineAlert {
+    gap: 0.6rem;
+  }
+  .submitImgDiv {
+    width: 7.375rem;
+    height: 6.938rem;
+  }
+  .submitSubHeading {
+    line-height: 1.6rem;
+  }
+  .customCheckboxIndicator {
+    top: 10px;
+  }
+  .inputFileDiv {
+    align-items: unset;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+  .formSection {
+    width: 40rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+}

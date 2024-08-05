@@ -1,0 +1,510 @@
+.hero {
+  width: 100%;
+  position: relative;
+}
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exploreBtn {
+  width: fit-content;
+}
+.heroImgdiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 30rem;
+  margin: 0 4rem;
+  margin-top: 1rem;
+  background-image: url("../assets//LandingPage/hero_background_2.webp");
+  /* background-position: center; */
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 80%;
+}
+
+.heroImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.25rem;
+}
+
+.imgDivContent {
+  display: flex;
+  padding: 1.6rem;
+  flex-direction: column;
+  gap: 1.6rem;
+  /* min-height: calc(100vh - 80px); */
+  justify-content: center;
+  color: var(--bg-yellow);
+}
+
+.heading {
+  width: 50%;
+  text-shadow: 1px 1px 2px black;
+}
+
+.subHeading {
+  width: 50%;
+  font-family: "satoshi-light", sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+.btns {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.625rem;
+}
+
+.surveyBtn,
+.classesBtn {
+  padding: 0.624rem 1.25rem !important;
+}
+.surveyBtn {
+  background-color: var(--bg-yellow) !important;
+  color: var(--bg-brown);
+}
+
+.classesBtn {
+  color: var(--bg-yellow);
+  background-color: transparent !important;
+  border: 1px solid var(--bg-yellow) !important;
+}
+
+.liveSessionsDiv {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.liveSessionBtn {
+  border: none !important;
+  display: flex;
+  gap: 0.313rem;
+  padding: 0.75rem 1.25rem !important;
+}
+
+.liveSessionBtn img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.shortHeadingSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 4rem;
+  align-items: center;
+  gap: 2rem;
+  max-width: 100rem;
+}
+
+.shortHeading {
+  color: var(--text-blue);
+  font-size: 3.5rem;
+  width: 50%;
+}
+
+.shortSubheading {
+  color: var(--text-blue);
+  width: 50%;
+  font-size: 1.125rem;
+}
+
+/* *************************************** */
+.sectionDiv {
+  width: 100%;
+  background-color: var(--bg-yellow);
+  display: flex;
+  justify-content: center;
+}
+.sectionDivWrapper {
+  display: flex;
+  max-width: 100rem;
+}
+.leftSectionDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+  gap: 30px;
+  width: 60%;
+  justify-self: center;
+  height: 900px;
+  justify-content: center;
+}
+.headingSectionDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.para {
+  color: var(--text-blue) !important;
+}
+.tagLine {
+  font-family: "satoshi-med", sans-serif;
+}
+.headingExtra {
+  color: #000000 !important;
+  width: 100%;
+  font-size: 3rem;
+  color: var(--bg-yellow);
+  font-family: "sentinent-med", sans-serif;
+}
+.shortSubheadingExtra {
+  width: 100%;
+  color: var(--text-blue);
+}
+
+.features {
+  margin-top: 30px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 45%;
+}
+.feature img {
+  width: fit-content;
+}
+
+.feature p:nth-of-type(2) {
+  color: var(--text-blue);
+}
+
+.featuresHeading {
+  font-size: 1.2rem;
+  font-family: "satoshi-med", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+.btnLinkDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnLinkDiv button,
+.btnLinkDiv a {
+  color: var(--text-blue);
+  margin-top: 30px;
+}
+
+.btnLinkDiv a {
+  display: flex;
+  align-items: center;
+}
+
+/* ************************************* */
+.programsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 4.5rem 4rem 1.4rem 4rem;
+  color: var(--text-blue);
+  width: 100%;
+  max-width: 100rem;
+}
+.heading_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+.programsHeading {
+  color: var(--text-blue);
+  font-size: 3rem;
+  font-family: "sentinent-med", sans-serif;
+}
+.programsViewBtn {
+  display: flex;
+  gap: 10px;
+  /* padding: 8px 18px !important; */
+  text-wrap: nowrap;
+}
+
+/* ***************************************** */
+.surveySection {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+.surveyDiv {
+  border: 1px solid var(--text-blue);
+  padding: 18px 30px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  max-width: 70rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.surveyHeading {
+  font-family: "sentinent-med", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.surveySubheading {
+  font-size: 1.5rem;
+  font-family: "satoshi-regular", sans-serif;
+  text-align: center;
+}
+
+.surveyBtn2 {
+  background-color: var(--text-blue) !important;
+  color: white;
+  /* padding: 8px 20px !important; */
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.surveyBtn2 p {
+  font-family: "satoshi-light", sans-serif;
+}
+
+/* ******************************************* */
+
+@media screen and (max-width: 1024px) {
+  .sectionDivWrapper {
+    flex-direction: column;
+  }
+  .heading,
+  .shortHeading {
+    font-size: 3.25rem;
+  }
+  .headingExtra,
+  .programsHeading {
+    font-size: 3.25rem;
+  }
+  .sectionDiv {
+    flex-direction: column;
+  }
+  .leftSectionDiv {
+    width: 100%;
+    height: unset;
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroImgdiv {
+    margin: 0 3rem;
+  }
+  .leftSectionDiv {
+    padding: 1rem 3rem;
+  }
+  .heading,
+  .shortHeading {
+    font-size: 2.625rem;
+  }
+  .heading {
+    width: 70%;
+  }
+  .shortSubheading {
+    font-size: 1rem;
+  }
+  .shortHeadingSection {
+    flex-direction: column;
+  }
+  .shortHeading,
+  .shortSubheading {
+    width: 100%;
+  }
+  .headingExtra,
+  .programsHeading {
+    font-size: 2.625rem;
+  }
+  .btns {
+    margin-top: 0;
+  }
+  .classesBtn {
+    background-color: var(--bg-brown) !important;
+    color: var(--bg-yellow);
+  }
+  .shortHeadingSection {
+    padding: 3.75rem 3rem;
+  }
+  .programsDiv {
+    padding: 3.75rem 3rem 1rem 3rem;
+  }
+  .surveyDiv {
+    width: 80%;
+  }
+  .surveySubheading {
+    font-size: 1.375rem;
+  }
+  .surveyHeading {
+    font-size: 1.875rem;
+  }
+  .features {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .btns {
+    flex-direction: column;
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 480px) {
+  .leftSectionDiv {
+    padding: 1rem 2rem;
+  }
+  .heading,
+  .shortHeading {
+    font-size: 1.6rem;
+  }
+  .heading {
+    width: 100%;
+  }
+  .heroImgdiv {
+    margin: 0 2rem;
+    background-position: unset;
+    background-position-x: 80%;
+  }
+  .surveySection {
+    padding: 2rem 2rem;
+  }
+  .surveyDiv {
+    width: 100%;
+  }
+  .liveSessionsDiv {
+    right: 20px;
+    bottom: 1.55rem;
+  }
+
+  .headingExtra,
+  .programsHeading {
+    font-size: 2.375rem;
+  }
+  .heading_btn {
+    flex-direction: column;
+    align-items: start;
+  }
+  .shortHeadingSection,
+  .programsDiv {
+    padding: 3.75rem 2rem 4rem 2rem;
+  }
+  .programsDiv {
+    padding: 3.75rem 2rem 1rem 2rem;
+  }
+  .surveySubheading {
+    font-size: 1.25rem;
+  }
+  .surveyHeading {
+    font-size: 1.75rem;
+  }
+  .features {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .feature {
+    width: 100%;
+  }
+  .newSubHeading {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .liveSessionsDiv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .heading,
+  .shortHeading {
+    font-size: 3.75rem;
+  }
+  .headingExtra,
+  .programsHeading {
+    font-size: 3.25rem;
+  }
+  .surveySubheading {
+    font-size: 1.375rem;
+  }
+  .surveySubheading {
+    font-size: 1.625rem;
+  }
+  .surveyHeading {
+    font-size: 2.125rem;
+  }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+  .heading,
+  .shortHeading {
+    font-size: 4rem;
+  }
+  .shortSubheading {
+    font-size: 1.325rem;
+  }
+  .headingExtra,
+  .programsHeading {
+    font-size: 3.5rem;
+  }
+  .surveySubheading {
+    font-size: 1.75rem;
+  }
+  .surveyHeading {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .heading,
+  .shortHeading {
+    font-size: 4.25rem;
+  }
+  .shortSubheading {
+    font-size: 1.5rem;
+  }
+  .headingExtra,
+  .programsHeading {
+    font-size: 3.75rem;
+  }
+  .surveySubheading {
+    font-size: 1.875rem;
+  }
+  .surveyHeading {
+    font-size: 2.375rem;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+  .leftSectionDiv {
+    height: 1000px;
+  }
+  .heading,
+  .shortHeading {
+    font-size: 4.5rem;
+  }
+  .shortSubheading {
+    font-size: 1.625rem;
+  }
+  .headingExtra,
+  .programsHeading {
+    font-size: 4rem;
+  }
+  .surveySubheading {
+    font-size: 2rem;
+  }
+  .surveyHeading {
+    font-size: 2.5rem;
+  }
+}

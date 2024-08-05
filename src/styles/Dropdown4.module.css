@@ -1,0 +1,37 @@
+.selectBtn {
+    background-color: #f6f6f6;
+    border: none;
+}
+.placeholderExtra {
+    font-family: "satoshi-bold", sans-serif;
+    color: var(--text-blue);
+}
+.subPlaceholderExtra {
+    font-family: "satoshi-med", sans-serif;
+    color: var(--text-blue);
+}
+
+.placeholder6 {
+    font-family: "satoshi-regular", sans-serif;
+}
+.customDropdown6 {
+    border-bottom: 1px solid black;
+    width: 60%;
+}
+.customDropdown6 button {
+    background-color: transparent;
+    padding: 0.6rem 0;
+}
+.dropdownContent6 {
+    top: 3.6rem;
+}
+.dropdownContent6 div label p {
+    font-family: "satoshi-regular", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .customDropdown6 {
+        border-bottom: 1px solid black;
+        width: 95% !important;
+    }
+}

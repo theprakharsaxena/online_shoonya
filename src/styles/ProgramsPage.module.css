@@ -1,0 +1,82 @@
+.filterSection {
+    display: flex;
+    align-items: center;
+    padding: 3rem 4rem 1rem 4rem;
+    justify-content: space-between;
+}
+
+.filterSectionLeft {
+    width: 15%;
+}
+.backBtn {
+    display: flex;
+    gap: 0.2rem;
+}
+.filters {
+    display: flex;
+    gap: 1rem;
+    width: 70%;
+    justify-content: center;
+}
+.filterSectionRight {
+    display: flex;
+    width: 15%;
+}
+.allBtn {
+    background-color: #1c274c;
+}
+
+@media screen and (max-width: 1280px) {
+    .filterSectionLeft {
+        width: unset;
+    }
+    .filterSectionRight {
+        display: none;
+    }
+    .filters {
+        width: unset;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .filterSection {
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .filterSectionLeft {
+        width: unset;
+    }
+    .filterSectionRight {
+        display: none;
+    }
+    .filters {
+        width: unset;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 768px) {
+    .filterSection {
+        padding: 1rem 3rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filterSection {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+}
+
+@media screen and (min-width: 1601px) {
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+}

@@ -1,0 +1,161 @@
+.featuredResourcesParentImgDiv {
+    width: 50%;
+}
+
+.resourceHeading {
+    padding: 60px 2.5rem;
+    max-width: 97rem;
+    margin: 0 auto;
+}
+.featuredResourcesHeading {
+    padding: 0 2.5rem;
+    color: var(--text-blue);
+}
+.featuredResourcesDiv {
+    padding: 1.875rem 2.6rem 3.75rem 2.6rem;
+    color: var(--text-blue);
+}
+.featuredResourcesHeading {
+    font-family: "satoshi-bold", sans-serif;
+}
+.featuredResourcesDiv {
+    display: flex;
+    gap: 1rem;
+}
+.resourceImgDiv {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+.resourceImgDiv img {
+    border-radius: 0.8rem;
+}
+.resourceHeadings {
+    padding: 0.8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.featuredResourceTitleTxt {
+    font-size: 1.25rem;
+    font-family: "satoshi-bold", sans-serif;
+}
+.blogSubheading {
+    font-family: "satoshi-bold", sans-serif;
+}
+.readMore {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.readMore a {
+    color: var(--text-blue);
+}
+.featuredSubresourceDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.featuredSubresource {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+.featuredSubresourceImgDiv {
+    width: 40%;
+}
+.featuredSubresourceImgDiv img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.featuredResourceInfo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+/* ********************************* */
+.featuredBlogDiv {
+    padding: 1rem 0;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.featuredResourcesHeading,
+.featuredResourcesDiv {
+    max-width: 97rem;
+    margin: 0 auto;
+}
+
+.blogCards {
+    overflow: initial;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.programsDivExtra3 {
+    padding: 0 2.5rem 1.5rem 2.5rem;
+}
+@media screen and (max-width: 480px) {
+    .featuredResourceTitleTxt {
+        font-size: 1rem;
+    }
+    .featuredSubresource {
+        flex-direction: column;
+    }
+    .featuredSubresourceImgDiv,
+    .featuredResourceInfo {
+        width: 100%;
+    }
+    .featuredSubresourceDiv {
+        gap: 1.8rem;
+    }
+    .programsDivExtra3 {
+        padding: 0 2.5rem 1.5rem 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .featuredResourceTitleTxt {
+        font-size: 1.125rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .featuredResourcesDiv {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .featuredResourcesParentImgDiv {
+        width: 100%;
+    }
+    .featuredSubresourceDiv {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .featuredSubresource {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .featuredResourceTitleTxt {
+        font-size: 1.375rem;
+    }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+    .featuredResourceTitleTxt {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+    .featuredResourceTitleTxt {
+        font-size: 1.625rem;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+    .featuredResourceTitleTxt {
+        font-size: 1.75rem;
+    }
+}

@@ -1,0 +1,312 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profileMain {
+  width: 100%;
+  max-width: 92rem;
+  display: flex;
+  gap: 3rem;
+}
+.profileLeft {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 12rem;
+}
+.profileLeftTop {
+  border: 2px solid #e8ebee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  gap: 0.8rem;
+}
+.profileRight {
+  width: 80%;
+}
+.profileImgDiv {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileImgDiv img {
+  width: 100%;
+}
+.editIconDiv {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.profileIcon_type {
+  display: flex;
+  color: var(--text-blue);
+  /* margin-top: 1rem; */
+}
+.profileType {
+  font-family: "satoshi-med", sans-serif;
+}
+.profileIconDiv {
+  display: flex;
+  gap: 0.6rem;
+  background-color: #f6f6f6;
+  padding: 0.4rem 0.6rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+.profileIconDiv {
+  display: flex;
+  justify-content: center;
+}
+.profileHeading p {
+  font-family: "satoshi-med";
+  text-align: center;
+}
+.profileSubheading {
+  color: #7e7e7e;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.profileSubheading p {
+  font-family: "satoshi-med", sans-serif;
+}
+.profileLeftBottom {
+  background-color: var(--bg-yellow);
+  border: none;
+  gap: 0.4rem;
+}
+.profileIconDiv {
+  /* background-color: transparent; */
+}
+.leftBottomHeading {
+  font-family: "satoshi-bold", sans-serif !important;
+}
+.upcomingSession {
+  background-color: transparent;
+}
+.calenderDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+.calenderDiv img {
+  height: 1.688rem;
+  width: 1.688rem;
+}
+
+.editIconDiv img {
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.clockIconTimerDiv img {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+.calenderDiv p {
+  font-family: "satoshi-med", sans-serif;
+  text-align: center;
+}
+.walletIconDiv {
+  background-color: #f1f1f1 !important;
+}
+.addIconDiv {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+.addIconDiv img {
+  width: 20px;
+}
+.programListDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.programListTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  gap: 0.4rem;
+}
+.programActivityTitle {
+  margin-right: 1.5rem;
+}
+.programStatusTitle {
+  margin-right: 2.3rem;
+}
+.programListTitle p {
+  color: #8d98a8;
+  font-family: "satoshi-med", sans-serif;
+}
+.program {
+  border: 2px solid #e3e3e3;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.programName,
+.programStatus,
+.programTime p {
+  font-family: "satoshi-med", sans-serif;
+}
+.programName,
+.programStatus,
+.programTime {
+  flex: 1;
+}
+.programStatus {
+  text-align: center;
+}
+.programTime {
+  text-align: end;
+}
+.programStatus {
+  color: #009221;
+  /* margin-left: 4rem; */
+}
+.previousProgramStatus {
+  color: rgb(242, 52, 9);
+}
+.clockIconTimerDiv {
+  display: flex;
+  background-color: var(--bg-brown);
+  border-radius: 2rem;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.3rem 0.8rem 0.3rem 0.2rem;
+}
+.clockIconTimerDiv p {
+  font-family: "satoshi-med", sans-serif;
+  color: #ffffff;
+}
+.sessionTimerDiv {
+  margin-top: 2.4rem;
+}
+.tabHr {
+  margin-top: 0.4rem;
+}
+.previousPrograms {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.6rem;
+  gap: 0.6rem;
+}
+.previousProgramActivity {
+  font-family: "satoshi-bold", sans-serif !important;
+}
+
+@media screen and (max-width: 840px) {
+  .profileMain {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profileMain {
+    flex-direction: column;
+  }
+  .profileLeft {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .profileLeftTop {
+    width: fit-content;
+    justify-content: space-around;
+  }
+  .profileRight {
+    width: 100%;
+  }
+  .links_session {
+    flex-direction: row;
+    align-items: center;
+  }
+  .profileLeftTop {
+    width: 60%;
+  }
+  .profileLeftBottom {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileMain {
+    gap: 1rem;
+  }
+  .profileLeft {
+    flex-direction: column;
+  }
+  .profileLeftTop,
+  .profileLeftBottom {
+    width: 100%;
+  }
+  .teacher_links_session {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .programListDiv {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .programStatusTitle {
+    margin-right: 2rem;
+  }
+  .programActivityTitle {
+    margin-right: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .profileIcon_type {
+    /* margin-top: 1rem; */
+  }
+  .sessionTimerDiv {
+    margin-top: 2.8rem;
+  }
+}
+/* Additional breakpoints */
+@media screen and (min-width: 1441px) {
+  .calenderDiv img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .editIconDiv img {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+  .clockIconTimerDiv img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .addIconDiv img {
+    width: 26px;
+  }
+  .sessionTimerDiv {
+    margin-top: 3.4rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1921px) {
+}

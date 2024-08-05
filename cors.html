@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>File Upload Test</title>
+</head>
+
+<body>
+  <h1>Upload a File</h1>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" name="file" />
+    <button type="button" id="uploadButton">Upload</button>
+  </form>
+  <script>
+    document.getElementById('uploadButton').addEventListener('click', () => {
+      const fileInput = document.getElementById('fileInput');
+      if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        const formData = new FormData();
+        formData.append('file', file);
+
+        fetch('https://shoonya-data.nyc3.digitaloceanspaces.com/shoonya_data/11_cert_1.pdf?AWSAccessKeyId=DO00B6BEQU3R9ZCCLVDM&Signature=9P08KDhnNoGkPKcvkUbtHGMGu9E%3D&Expires=1716833155' + file.name, {
+          method: 'PUT',
+
+          body: file
+        })
+          .then(response => {
+            if (response.ok) {
+              console.log('File uploaded successfully.');
+            } else {
+              console.error('Failed to upload file:', response.statusText);
+            }
+          })
+          .catch(error => {
+            console.error('Error during file upload:', error);
+          });
+      } else {
+        console.error('No file selected.');
+      }
+    });
+  </script>
+</body>
+
+</html>
