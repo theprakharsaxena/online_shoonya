@@ -27,7 +27,7 @@ const CounterCard = ({ data, value, additional }) => {
   return (
     <div ref={ref}>
       <div className="flex flex-col items-center gap-2 w-full">
-        <p className="text-4xl lg:text-5xl font-medium">
+        <p className="text-5xl sm:text-4xl lg:text-5xl font-medium">
           {counterValue}
           {additional}
         </p>
@@ -39,16 +39,18 @@ const CounterCard = ({ data, value, additional }) => {
 
 const AboutStats = () => {
   return (
-    <div className="w-full grid sm:grid-cols-3 grid-cols-1 px-6 lg:px-16 py-8 gap-8 bg-gray-200 text-center">
-      {stats.map((item, index) => (
-        <CounterCard
-          key={index}
-          data={item.data}
-          value={item.value}
-          additional={item.additional}
-        />
-      ))}
-    </div>
+    <section className="px-10 sm:px-12 md:px-14 lg:px-16 py-20 bg-gray-200">
+      <div className="w-full grid sm:grid-cols-3 grid-cols-1 gap-8 text-center">
+        {stats.map((item, index) => (
+          <CounterCard
+            key={index}
+            data={item.data}
+            value={item.value}
+            additional={item.additional}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

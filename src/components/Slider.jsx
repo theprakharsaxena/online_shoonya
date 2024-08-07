@@ -29,7 +29,7 @@ const ImageSlide = ({ img, index, doubleHeight }) => (
 function Slider() {
   return (
     <div className="blend-effect-top">
-      <div className="flex flex-row gap-2 overflow-hidden relative h-[700px] w-[550px] blend-effect-bottom">
+      <div className="flex flex-row gap-2 overflow-hidden relative h-screen min-h-[650px] w-[550px] blend-effect-bottom">
         <div className="flex flex-col animate-slide1">
           {[...imagesSet1, ...imagesSet1, ...imagesSet1].map((img, index) => (
             <ImageSlide

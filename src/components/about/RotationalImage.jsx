@@ -1,6 +1,6 @@
 const RotationalImage = () => {
   return (
-    <div className="mt-2">
+    <div className="mt-8">
       <div id="circle-orbit-container">
         <div id="central-image">
           <img src="/about/logo.webp" alt="Central" />

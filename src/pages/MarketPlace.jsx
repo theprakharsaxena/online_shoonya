@@ -1,13 +1,11 @@
-import ProductCards from "../components/ProductCards";
-import ProgramCards from "../components/ProgramCards";
 import Footer from "../components/Footer";
 import { usePopup } from "../context/PopupContext";
 import { useNavigate } from "react-router-dom";
 import ProgramsList from "../utils/ProgramsList";
 import profileImg from "../assets/Footer/brand_only_logo.jpeg";
 import useInView from "../utils/useInView";
+import OurProduct from "../components/about/OurProduct";
 import OurProgram from "../components/LandingPage/OurProgram";
-import rightArrowSvg from "../assets/LandingPage/right_arrow.svg";
 
 const MarketPlace = () => {
   const { togglePopup } = usePopup();
@@ -18,7 +16,7 @@ const MarketPlace = () => {
   return (
     <div className="w-full">
       <section className="py-20 px-16">
-        <div className="flex justify-start w-full relative h-[20rem] mt-4 bg-[url('/program/marketplace_banner.webp')] bg-cover bg-no-repeat bg-right rounded-2xl">
+        <div className="flex justify-start min-h-[40vh] w-full relative mt-4 bg-[url('/program/marketplace_banner.webp')] bg-cover bg-no-repeat bg-right rounded-2xl">
           <div className="flex flex-col justify-center gap-4 p-8 text-[var(--bg-yellow)]">
             {" "}
             {/* Heading */}
@@ -57,10 +55,9 @@ const MarketPlace = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[600px] py-20 px-16 bg-[var(--bg-yellow)]">
-        <OurProgram />
-        <ProductCards />
-      </section>
+      <div className="bg-[var(--bg-yellow)]">
+        <OurProduct />
+      </div>
       {/* <div className="flex flex-col items-center p-8 w-full bg-white rounded-lg">
         <p className="text-2xl font-bold text-center mb-4">
           If you are a passionate yoga teacher willing to change the global
@@ -72,28 +69,7 @@ const MarketPlace = () => {
           </Link>
         </button>
       </div> */}
-      <section className="min-h-[600px] py-20 px-16">
-        <div
-          className={`flex flex-col gap-2.5 w-full ${
-            inView ? "animate-fade-up" : ""
-          }`}
-          ref={ref}
-        >
-          <div className="flex justify-between items-center gap-2.5">
-            <p className="font-sentinent text-5xl font-medium">Our Programs</p>
-            <button
-              className="px-4 py-2 rounded-full border border-black flex items-center justify-center bg-white gap-2.5 hover:animate-fade-right"
-              onClick={() => navigate("/marketplace")}
-            >
-              <p>View all</p> <img src={rightArrowSvg} alt="right_arrow" />
-            </button>
-          </div>
-          <p className="text-lg">
-            The professional world is demanding. Constant pressure,
-          </p>
-        </div>
-        <ProgramCards />
-      </section>
+      <OurProgram shortened={false} />
       <Footer />
     </div>
   );

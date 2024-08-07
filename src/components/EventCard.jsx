@@ -2,7 +2,7 @@ const EventCard = ({
   blog: { heading, subheading, category, link, readmin, img },
 }) => {
   return (
-    <div className="w-full p-4 rounded-2xl flex flex-col gap-5 transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl">
+    <div className="w-full p-4 sm:h-[calc(100vh/1.2)] rounded-2xl flex flex-col gap-5 transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl">
       <div className="h-[240px] overflow-hidden rounded-2xl">
         <img
           src={img}
@@ -11,18 +11,16 @@ const EventCard = ({
         />
       </div>
       <div className="flex gap-2 items-center">
-        <p className="bg-gray-200 p-2 rounded-md text-sm lg:text-base xl:text-lg 2xl:text-xl">
+        <p className="bg-gray-200 px-3 py-1.5 rounded-md text-sm lg:text-base xl:text-lg 2xl:text-xl">
           {category}
         </p>
-        <p className="text-sm lg:text-base xl:text-lg 2xl:text-xl text-gray-500">
-          {readmin} min read
-        </p>
+        <p className="text-sm lg:text-base text-gray-500">{readmin} min read</p>
       </div>
       <div className="flex flex-col gap-2 mt-[-5px]">
-        <p className="font-sans font-semibold text-xl sm:text-[1.375rem] md:text-[1.5rem] lg:text-[1.625rem] xl:text-[1.75rem] 2xl:text-[1.875rem] text-gray-800">
+        <p className="font-sans font-semibold text-xl md:text-2xl xl:text-3xl text-gray-800">
           {heading}
         </p>
-        <p className="font-sans text-gray-600">{subheading}</p>
+        <p className="font-sans text-gray-600 text-sm">{subheading}</p>
       </div>
     </div>
   );

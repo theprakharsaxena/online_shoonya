@@ -19,10 +19,10 @@
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
   position: relative;
-  top: 25px;
-  left: 25px;
-  height: 300px;
-  width: 300px;
+  top: 0%;
+  left: 0%;
+  height: 280px;
+  width: 280px;
 }
 
 /* ---------- Central Image ---------- */
@@ -40,8 +40,8 @@
   position: absolute;
   top: 75px;
   left: 75px;
-  width: 150px;
-  height: 150px;
+  width: 131px;
+  height: 131px;
   border: 1px var(--bg-brown) dotted;
   border-radius: 100%;
   -webkit-animation: spin-right 10s linear infinite;
@@ -63,7 +63,7 @@
 /* ---------- Repeating styles for the inner orbiting circles ---------- */
 .inner-orbit-cirlces {
   position: absolute;
-  top: 105px;
+  top: 95px;
   left: -6px;
   height: 50px;
   width: 50px;
@@ -77,8 +77,8 @@
   position: absolute;
   top: 35px;
   left: 35px;
-  width: 225px;
-  height: 225px;
+  width: 210px;
+  height: 210px;
   border: 1px var(--bg-brown) dotted;
   border-radius: 100%;
   -webkit-animation: spin-right 15s linear infinite;
@@ -87,7 +87,7 @@
 
 #middle-orbit-2 {
   position: absolute;
-  top: 18px;
+  top: 10px;
   left: 18px;
   width: 260px;
   height: 260px;
@@ -116,8 +116,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 294px;
-  height: 294px;
+  width: 280px;
+  height: 280px;
   border: 1px var(--bg-brown) dotted;
   border-radius: 100%;
   -webkit-animation: spin-right 20s linear infinite;
@@ -128,11 +128,11 @@
 .outer-orbit-cirlces {
   position: absolute;
   /* 42 */
-  top: -40px;
+  top: -30px;
   /* 108 */
   left: 125px;
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   border-radius: 100%;
   background-image: url("/about/ellipse2.webp");
   background-size: cover;
@@ -268,12 +268,40 @@
   }
 }
 
+@keyframes slideleft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .animate-slide1 {
   animation: 90s slide1 infinite linear;
 }
 
 .animate-slide2 {
   animation: 90s slide2 infinite linear;
+}
+
+.animate-slideleft {
+  animation: slideleft 50s linear infinite;
+  /* animation: 50s slideleft infinite linear; */
+}
+
+.animate-slideright {
+  display: flex;
+  animation: 50s slideright infinite linear;
 }
 
 ::-webkit-scrollbar {

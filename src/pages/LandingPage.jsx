@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ProgramCards from "../components/ProgramCards";
 import AboutShoonya from "../components/AboutShoonya";
-import EventCards from "../components/EventCards";
 import Footer from "../components/Footer";
 import { usePopup } from "../context/PopupContext";
 import { SERVER_URI } from "../main";
@@ -41,17 +39,14 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="mt-20">
+    <div className="">
       <div className="relative w-full">
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col w-full">
           <MainSection />
           <Rebalance />
           <ExploreProgram />
           <Retreats />
-          <div className="w-full py-20 px-16">
-            <OurProgram />
-            <ProgramCards shortened={true} padding={true} />
-          </div>
+          <OurProgram shortened={true} />
           {/* <div className={styles.surveySection}>
                     <div className={styles.surveyDiv}>
                         <p className={utils.s24}>Don't Know what programs are best for you ?</p>
@@ -62,8 +57,7 @@ const LandingPage = () => {
           {/* <TextSlider /> */}
           <AboutShoonya />
           {/* <TextSlider /> */}
-          <ExploreResources />
-          <EventCards shortened={true} />
+          <ExploreResources shortened={true} />
           <Footer />
         </div>
       </div>
