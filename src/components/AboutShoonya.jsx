@@ -17,8 +17,12 @@ const AboutShoonya = () => {
             }`}
             ref={ref}
           >
-            <p className={`text-5xl font-bold font-sentinent`}>Why Shoonya?</p>
-            <p className="text-lg">
+            <p
+              className={`text-2xl sm:text-4xl xl:text-5xl text-center font-semibold sm:font-bold font-sentinent`}
+            >
+              Why Shoonya?
+            </p>
+            <p className="text-sm sm:text-lg text-justify sm:text-center">
               Shoonya Life is designed to ensure that your dynamic lifestyle is
               perfectly in sync with your mind, body, and soul. We aim to bring
               authentic yoga combined with lifestyle changes, spiritual
@@ -28,11 +32,15 @@ const AboutShoonya = () => {
           </div>
           <div className="mt-5 flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
             <div className="flex flex-col p-6 gap-3 sm:gap-6 bg-[var(--Brand-colors-Base)] w-full lg:w-2/5 justify-center rounded-lg shadow-lg transition-transform transform hover:scale-105">
-              <img className="w-16 mx-auto" src={HandStar} alt="hand stars" />
+              <img
+                className="w-14 sm:w-16 mx-auto"
+                src={HandStar}
+                alt="hand stars"
+              />
               <h3 className="text-xl sm:text-2xl font-sentinent font-medium text-center">
                 Signature Programs for Corporate Professionals
               </h3>
-              <p className="text-base sm:text-lg font-satoshi text-center">
+              <p className="text-sm sm:text-lg font-satoshi text-justify sm:text-center">
                 Shoonya Life understands the unsaid struggles professionals
                 face. Our accredited Signature Programs with guided teacher
                 assistance utilize yoga’s ancient wisdom passed down through
@@ -46,7 +54,7 @@ const AboutShoonya = () => {
                   <h4 className="text-lg sm:text-xl font-medium font-sentinent">
                     Claims Backed by the Roots We Come From
                   </h4>
-                  <p className="text-sm sm:text-base font-satoshi">
+                  <p className="text-xs sm:text-base font-satoshi text-justify sm:text-balance">
                     The connection people share with Earth can be best expressed
                     through meditation and Yoga as prime languages and connect
                     to nature at a deeper level.
@@ -59,7 +67,7 @@ const AboutShoonya = () => {
                   <h4 className="text-lg sm:text-xl font-medium font-sentinent">
                     Certified Instructors deliver Signature Programs
                   </h4>
-                  <p className="text-sm sm:text-base font-satoshi">
+                  <p className="text-xs sm:text-base font-satoshi text-justify sm:text-balance">
                     Our team includes experts and certified teachers selected
                     through a rigorous evaluation process to help you attain
                     physical agility and a profound sense of calmness within.
@@ -72,7 +80,7 @@ const AboutShoonya = () => {
                   <h4 className="text-lg sm:text-xl font-medium font-sentinent">
                     Holistic Approach to Well-Being
                   </h4>
-                  <p className="text-sm sm:text-base font-satoshi">
+                  <p className="text-xs sm:text-base font-satoshi text-justify sm:text-balance">
                     Yoga with other practices like meditation, breathwork,
                     asanas, and healthy lifestyle coaching results in a calm
                     demeanour, significantly improving your emotional

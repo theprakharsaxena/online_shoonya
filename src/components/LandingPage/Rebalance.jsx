@@ -10,10 +10,10 @@ const Rebalance = () => {
         inView ? "animate-fade-up" : ""
       }`}
     >
-      <h1 className="text-[var(--text-blue)] text-3xl lg:text-4xl font-satoshi font-medium">
+      <h1 className="text-[var(--text-blue)] text-2xl sm:text-3xl lg:text-4xl font-satoshi font-semibold sm:font-medium text-center">
         Rebalance Your Professional Life with Shoonya
       </h1>
-      <p className="text-[var(--text-blue)] text-base lg:text-lg font-satoshi text-center">
+      <p className="text-[var(--text-blue)] text-sm sm:text-base lg:text-lg font-satoshi text-justify sm:text-center">
         The professional world is demanding. Constant pressure, long hours of
         work, and information overload may leave you stressed, anxious, and
         disconnected. Practicing pure Yoga helps combat these challenges and

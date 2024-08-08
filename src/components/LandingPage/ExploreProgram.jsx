@@ -40,16 +40,16 @@ const ExploreProgram = () => {
                   }`}
                   ref={ref}
                 >
-                  <p className="font-satoshi font-medium text-[var(--text-blue)]">
+                  <p className="font-satoshi text-xs sm:text-base font-medium text-[var(--text-blue)]">
                     Touch the Stillness Within
                   </p>
                   <p
-                    className={`w-full lg:text-5xl sm:text-4xl text-3xl font-sentinent font-medium text-[var(--text-blue)]`}
+                    className={`w-full lg:text-5xl sm:text-4xl text-2xl font-sentinent font-semibold sm:font-medium text-[var(--text-blue)]`}
                   >
                     Embrace Mindfulness and Serenity with True Yoga
                   </p>
                 </div>
-                <p className="text-[var(--text-blue)]">
+                <p className="text-[var(--text-blue)] text-sm sm:text-base text-justify sm:text-start">
                   Shoonya Life offers unique and comprehensive wellbeing
                   programs designed to address the specific needs of corporate
                   professionals. Our program incorporates ancient wisdom with
@@ -60,28 +60,28 @@ const ExploreProgram = () => {
                   ultimately leading to professional excellence.
                 </p>
               </div>
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex flex-col space-y-4 w-[80%] sm:w-full lg:w-[80%]">
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4">
+                <div className="flex flex-col space-y-4 w-[90%]">
                   <div className={`flex space-x-3 items-center`}>
-                    <img src={Star1} alt="" className="w-10" />
+                    <img src={Star1} alt="" className="w-8 sm:w-10" />
                     <p className={`text-xl font-satoshi font-semibold`}>
                       Expert Team
                     </p>
                   </div>
-                  <p className="">
+                  <p className="text-balance">
                     Shoonya Life leverages its professional expertise and the
                     accredited training of Param Yoga to create tailored
                     programs for corporate professionals.{" "}
                   </p>
                 </div>
-                <div className="flex flex-col space-y-4 w-[80%] sm:w-full lg:w-[80%]">
+                <div className="flex flex-col space-y-4 w-[90%]">
                   <div className={`flex space-x-3 items-center `}>
-                    <img src={Star2} alt="" className="w-10" />
+                    <img src={Star2} alt="" className="w-8 sm:w-10" />
                     <p className={`text-xl font-satoshi font-semibold`}>
                       Daily Yoga
                     </p>
                   </div>
-                  <p className="">
+                  <p className="text-balance">
                     Daily yoga practice unlocks mental and spiritual clarity.
                     Its restorative power strengthens and energizes your body,
                     creating a foundation for well-being.{" "}

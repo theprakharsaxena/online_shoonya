@@ -16,21 +16,26 @@ const OurProgram = ({ shortened, background }) => {
           }`}
           ref={ref}
         >
-          <p className="font-satoshi font-medium">
+          <p className="font-satoshi font-medium text-xs sm:text-base">
             Investing in Yourself Starts Here
           </p>
           <div className="flex justify-between items-center gap-2.5">
-            <p className="font-sentinent text-xl sm:text-5xl font-medium">
+            <p className="font-sentinent text-2xl sm:text-5xl font-medium">
               Our Programs
             </p>
             <button
-              className="px-3 sm:px-4 py-1 sm:py-2 rounded-full border border-black flex items-center justify-center bg-white gap-2.5 hover:animate-fade-right"
+              className="px-3 py-1 sm:px-4 sm:py-2 rounded-full border border-black flex items-center justify-center bg-white gap-2.5 hover:animate-fade-right"
               onClick={() => navigate("/marketplace")}
             >
-              <p>View all</p> <img src={rightArrowSvg} alt="right_arrow" />
+              <p>View all</p>{" "}
+              <img
+                src={rightArrowSvg}
+                alt="right_arrow"
+                className="w-3.5 sm:w-4.5"
+              />
             </button>
           </div>
-          <p className="text-base sm:text-lg w-9/12 sm:w-full">
+          <p className="text-sm sm:text-lg w-9/12 sm:w-full">
             Reap the maximum benefits possible from your Yoga practice.
           </p>
         </div>

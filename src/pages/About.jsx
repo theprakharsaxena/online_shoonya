@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { usePopup } from "../context/PopupContext";
 import RotationalImage from "../components/about/RotationalImage";
-import OurProgram from "../components/LandingPage/OurProgram";
 import useInView from "../utils/useInView";
 
 const About = () => {
@@ -50,20 +49,26 @@ const About = () => {
         </div> */}
       <div className="flex flex-col w-full text-[var(--text-blue)] bg-[var(--bg-yellow)]">
         <section className="flex flex-col gap-10 px-10 sm:px-12 md:px-14 lg:px-16 py-20">
-          <div className="flex flex-col gap-4 w-full md:w-4/5 lg:w-3/5">
-            <p className="text-base sm:text-lg font-satoshi">
-              What separates us from the rest
-            </p>
-            <p className="text-3xl sm:text-4xl font-semibold font-sentinent">
-              We value Joy over Distraction & Health over Exhaustion
-            </p>
-            <p className="text-lg sm:text-xl font-satoshi font-normal">
-              Care and harmony lie at the core of our values. Our practices
-              empower you to move with ease and grace, fostering a strong and
-              resilient body that supports your exploration of your inner world.
-              Through this holistic approach, Shoonya Life guides you toward a
-              life filled with joy, vitality, and a renewed sense of purpose.
-            </p>
+          <div className="grid xl:grid-cols-3 lg:grid-cols-5 grid-cols-1">
+            <div className="flex flex-col gap-4 w-full xl:col-span-2 lg:col-span-3">
+              <p className="text-base sm:text-lg font-satoshi">
+                What separates us from the rest
+              </p>
+              <p className="text-3xl sm:text-4xl font-semibold font-sentinent">
+                We value Joy over Distraction & Health over Exhaustion
+              </p>
+              <p className="text-lg sm:text-xl font-satoshi font-normal">
+                Care and harmony lie at the core of our values. Our practices
+                empower you to move with ease and grace, fostering a strong and
+                resilient body that supports your exploration of your inner
+                world. Through this holistic approach, Shoonya Life guides you
+                toward a life filled with joy, vitality, and a renewed sense of
+                purpose.
+              </p>
+            </div>
+            <div className="hidden lg:flex justify-end xl:col-span-1 lg:col-span-2">
+              <img src="/about/about_bg_design.png" alt="logo" className="" />
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
             <div className="flex flex-col gap-4 p-4 bg-gray-500/10 rounded-2xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl">
@@ -154,8 +159,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <OurProgram background={"white"} />
-        <div className="flex flex-col items-center px-10 sm:px-12 md:px-14 lg:px-16 py-20">
+        <div className="flex flex-col items-center px-10 sm:px-12 md:px-14 lg:px-16 pb-20">
           <div className="flex flex-col items-center gap-4">
             <p className="text-2xl font-semibold">Still have a question?</p>
             <p className="text-lg font-normal text-center">

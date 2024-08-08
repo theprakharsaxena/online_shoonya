@@ -33,12 +33,13 @@ import PaymentPolicy from "./pages/PaymentPolicy";
 // import TeacherProgramPage from './pages/TeacherProgramPage';
 // import TeacherProfilePage from './pages/TeacherProfilePage';
 import { SERVER_URI } from "./main";
-import ApplicationFormPage from "./pages/ApplicationFormPage";
+// import ApplicationFormPage from "./pages/ApplicationFormPage";
 import WelcomePopup from "./components/WelcomePopup";
 import BuyPopup from "./components/BuyPopup";
 import ParamYogaLogin from "./components/ParamYogaLogin";
 import SessionNotStartedPopup from "./components/SessionNotStartedPopup";
 import toast from "react-hot-toast";
+import TeachWithShoonya from "./pages/TeachWithShoonya";
 
 const App = () => {
   const {
@@ -176,10 +177,11 @@ const App = () => {
         <Route path="/product/:id" element={<ProductPage />}></Route>
         <Route path="/resources" element={<ResourcesPage />}></Route>
         <Route path="/programs" element={<ProgramsPage />}></Route>
-        <Route path="/home" element={<TeacherHome />}></Route>
+        <Route path="/teacher" element={<TeacherHome />}></Route>
         <Route
           path="/applicationForm"
-          element={<ApplicationFormPage />}
+          element={<TeachWithShoonya />}
+          // element={<ApplicationFormPage />}
         ></Route>
         <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
         <Route path="/paymentpolicy" element={<PaymentPolicy />}></Route>
