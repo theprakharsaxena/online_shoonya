@@ -9,12 +9,12 @@ const ProgramCard = ({
   const navigate = useNavigate();
 
   return (
-    <div className="w-full h-[calc(100vh/1.4)] border border-[var(--Brand-colors-Base)] p-3 rounded-xl flex flex-col gap-4 duration-300 transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl bg-white">
+    <div className="w-full h-full border border-[var(--Brand-colors-Base)] p-3 rounded-xl flex flex-col gap-4 duration-300 transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl bg-white">
       <div className="overflow-hidden rounded-lg">
         <img
           src={ProgramsList[idx].image}
           alt="program_img"
-          className="w-full h-[calc(100vh/4)] md:h-[calc(100vh/3)] object-cover object-center transition-transform transform hover:scale-110"
+          className="w-full h-[250px] object-cover object-center transition-transform transform hover:scale-110"
         />
       </div>
       <div className="flex flex-col gap-4 px-2">

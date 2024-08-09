@@ -2,12 +2,12 @@ const EventCard = ({
   blog: { heading, subheading, category, link, readmin, img },
 }) => {
   return (
-    <div className="w-full p-4 min-h-[500px] sm:h-[calc(100vh/1.2)] rounded-2xl flex flex-col gap-5 transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl">
-      <div className="h-[200px] sm:h-[240px] overflow-hidden rounded-2xl">
+    <div className="w-full h-full p-4 rounded-2xl flex flex-col gap-5 transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl">
+      <div className="overflow-hidden rounded-2xl">
         <img
           src={img}
           alt="event_img"
-          className="w-full h-full object-cover object-center transition-transform transform hover:scale-110"
+          className="w-full h-[250px] object-cover object-center transition-transform transform hover:scale-110"
         />
       </div>
       <div className="flex gap-2 items-center">

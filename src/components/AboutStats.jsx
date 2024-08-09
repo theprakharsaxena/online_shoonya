@@ -39,16 +39,18 @@ const CounterCard = ({ data, value, additional }) => {
 
 const AboutStats = () => {
   return (
-    <section className="px-10 sm:px-12 md:px-14 lg:px-16 py-20 bg-gray-200">
-      <div className="w-full grid sm:grid-cols-3 grid-cols-1 gap-8 text-center">
-        {stats.map((item, index) => (
-          <CounterCard
-            key={index}
-            data={item.data}
-            value={item.value}
-            additional={item.additional}
-          />
-        ))}
+    <section className="max-w-screen-2xl mx-auto">
+      <div className="px-10 sm:px-12 md:px-14 lg:px-16 py-20 bg-gray-200">
+        <div className="w-full grid sm:grid-cols-3 grid-cols-1 gap-8 text-center">
+          {stats.map((item, index) => (
+            <CounterCard
+              key={index}
+              data={item.data}
+              value={item.value}
+              additional={item.additional}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

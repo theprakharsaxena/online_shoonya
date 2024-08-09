@@ -25,12 +25,12 @@ const ExploreProgram = () => {
   // }, []);
 
   return (
-    <div className="my-20">
+    <div className="my-20 max-w-screen-2xl mx-auto">
       <div className="lg:hidden flex">
         <LeftSlider />
       </div>
       <section className="px-10 sm:px-12 md:px-14 lg:px-16 my-5 lg:my-0">
-        <div className="bg-white w-full flex justify-center fade-in-image">
+        <div className="bg-white w-full lg:w-full flex justify-center fade-in-image 2xl:h-[768px] lg:h-[668px]">
           <div className="flex w-full">
             <div className="flex flex-col py-4 gap-[30px] self-center justify-center">
               <div className="flex flex-col space-y-3">

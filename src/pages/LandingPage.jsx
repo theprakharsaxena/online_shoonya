@@ -40,26 +40,24 @@ const LandingPage = () => {
 
   return (
     <div className="">
-      <div className="relative w-full">
-        <div className="flex flex-col w-full">
-          <MainSection />
-          <Rebalance />
-          <ExploreProgram />
-          <Retreats />
-          <OurProgram shortened={true} />
-          {/* <div className={styles.surveySection}>
+      <div className="flex flex-col">
+        <MainSection />
+        <Rebalance />
+        <ExploreProgram />
+        <Retreats />
+        <OurProgram shortened={true} />
+        {/* <div className={styles.surveySection}>
                     <div className={styles.surveyDiv}>
                         <p className={utils.s24}>Don't Know what programs are best for you ?</p>
                         <p className={`${utils.s32} ${utils.sw500}`}>Take a short survey and let us find the best program that suits you</p>
                         <button className={`${utils.btn1} ${styles.surveyBtn2}`} onClick={() => togglePopup()}><p>Take a Survey</p><img src={rightArrow2} alt="arrow_right" /></button>
                     </div>
                 </div> */}
-          {/* <TextSlider /> */}
-          <AboutShoonya />
-          {/* <TextSlider /> */}
-          <ExploreResources shortened={true} />
-          <Footer />
-        </div>
+        {/* <TextSlider /> */}
+        <AboutShoonya />
+        {/* <TextSlider /> */}
+        <ExploreResources shortened={true} />
+        <Footer />
       </div>
     </div>
   );

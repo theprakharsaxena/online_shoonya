@@ -12,34 +12,37 @@ const About = () => {
 
   return (
     <div className="flex flex-col">
-      <section className="px-10 sm:px-12 md:px-14 lg:px-16 py-20 lg:h-screen min-h-[650px]">
-        <div className="flex flex-col space-y-14">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full items-center lg:h-[50vh]">
-            <h2 className="font-sentinent order-2 sm:order-1 lg:col-span-2 text-4xl lg:text-5xl xl:text-6xl font-medium ">
-              Find the limitless potential within by connecting with the
-              Infinite
-            </h2>
-            <div className="col-span-1 order-1 sm:order-2 mb-8 sm:mb-0 flex justify-center">
-              <RotationalImage />
+      <section className="max-w-screen-2xl mx-auto ">
+        <div className="px-10 sm:px-12 md:px-14 lg:px-16 py-20 2xl:py-24 2xl:h-[768px] lg:h-[668px]">
+          <div className="flex flex-col space-y-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full items-center 2xl:h-[400px] xl:h-[350px] lg:h-[300px]">
+              <h2 className="font-sentinent order-2 sm:order-1 lg:col-span-2 text-4xl lg:text-5xl xl:text-6xl font-medium ">
+                Find the limitless potential within by connecting with the
+                Infinite
+              </h2>
+              <div className="col-span-1 order-1 sm:order-2 mb-8 sm:mb-0 flex justify-center">
+                <RotationalImage />
+              </div>
             </div>
-          </div>
-          <div
-            ref={ref}
-            className={`w-full flex flex-col items-center gap-4 text-[var(--text-blue)] lg:h-[18vh] ${
-              inView ? "animate-fade-up" : ""
-            }`}
-          >
-            <p className="text-3xl lg:text-3xl font-medium">
-              Touching Stillness within you Leads to infinite possibilities
-              outside you
-            </p>
-            <p className="text-lg font-light text-center">
-              The mental disorders are on a constant rise. Stress and anxiety
-              almost always find a way to interrupt our daily flow of life. How
-              to overcome the constant nudging of frustration that follows? By
-              practicing specially designed Yoga programs and lifestyle changes
-              delivered by the certified Yoga Teachers at Shoonya Life
-            </p>
+            <div
+              ref={ref}
+              className={`w-full flex flex-col items-center gap-4 text-[var(--text-blue)] lg:h-[168px] ${
+                inView ? "animate-fade-up" : ""
+              }`}
+            >
+              <p className="text-3xl lg:text-3xl font-medium text-center">
+                Touching Stillness within you Leads to infinite possibilities
+                outside you
+              </p>
+              <p className="text-lg font-light text-center">
+                The mental disorders are on a constant rise. Stress and anxiety
+                almost always find a way to interrupt our daily flow of life.
+                How to overcome the constant nudging of frustration that
+                follows? By practicing specially designed Yoga programs and
+                lifestyle changes delivered by the certified Yoga Teachers at
+                Shoonya Life
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -47,7 +50,7 @@ const About = () => {
       {/* <div className={styles.aboutImgDiv}>
           <img src={YogaImg} alt="about_img" />
         </div> */}
-      <div className="flex flex-col w-full text-[var(--text-blue)] bg-[var(--bg-yellow)]">
+      <div className="flex flex-col text-[var(--text-blue)] bg-[var(--bg-yellow)] max-w-screen-2xl mx-auto">
         <section className="flex flex-col gap-10 px-10 sm:px-12 md:px-14 lg:px-16 py-20">
           <div className="grid xl:grid-cols-3 lg:grid-cols-5 grid-cols-1">
             <div className="flex flex-col gap-4 w-full xl:col-span-2 lg:col-span-3">

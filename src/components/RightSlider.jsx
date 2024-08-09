@@ -7,7 +7,7 @@ const images = [Slideimg5, Slideimg6, Slideimg7, Slideimg8];
 
 const RightSlider = () => {
   return (
-    <div className="flex gap-2 overflow-hidden relative w-full">
+    <div className="flex gap-2 overflow-hidden relative w-screen lg:w-full">
       <div className="flex animate-slideright">
         {[...images, ...images, ...images].map((image, index) => (
           <div
