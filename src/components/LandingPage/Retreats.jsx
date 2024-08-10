@@ -1,8 +1,15 @@
 import useInView from "../../utils/useInView";
 import VideoPlayer from "./VideoPlayer";
+import { usePopup } from "../../context/PopupContext";
 
 const Retreats = () => {
+  const { togglePopup } = usePopup();
+
   const [ref, inView] = useInView();
+
+  const wellnessRetreatsHandler = () => {
+    togglePopup("Popup at wellness retreat");
+  };
 
   return (
     <section className="max-w-screen-2xl mx-auto">
@@ -23,8 +30,11 @@ const Retreats = () => {
               Escape, relax, and rejuvenate in our serene retreat. Recharge your
               spirit with expertly curated activities and return refreshed.
             </p>
-            <button className="bg-[#453736] text-white rounded-[33px] py-3 px-6 flex space-x-2 items-center mb-16 hover:animate-fade-right">
-              <p>Explore Retreats</p>
+            <button
+              onClick={wellnessRetreatsHandler}
+              className="bg-[#453736] text-white rounded-[33px] py-3 px-6 flex space-x-2 items-center mb-16 hover:animate-fade-right"
+            >
+              <p>Comin soon</p>
               <img src="/home/alt-arrow-right.png" alt="right arrow" />
             </button>
           </div>
