@@ -34,7 +34,7 @@ const Retreats = () => {
               onClick={wellnessRetreatsHandler}
               className="bg-[#453736] text-white rounded-[33px] py-3 px-6 flex space-x-2 items-center mb-16 hover:animate-fade-right"
             >
-              <p>Comin soon</p>
+              <p>Coming Soon</p>
               <img src="/home/alt-arrow-right.png" alt="right arrow" />
             </button>
           </div>
