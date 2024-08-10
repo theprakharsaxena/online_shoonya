@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="flex flex-col">
       <section className="max-w-screen-2xl mx-auto ">
-        <div className="px-10 sm:px-12 md:px-14 lg:px-16 py-20 2xl:py-24 2xl:h-[768px] lg:h-[668px]">
+        <div className="px-10 sm:px-12 md:px-14 lg:px-16 py-24 2xl:py-28 2xl:h-[768px] lg:h-[668px]">
           <div className="flex flex-col space-y-14">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full items-center 2xl:h-[400px] xl:h-[350px] lg:h-[300px]">
               <h2 className="font-sentinent order-2 sm:order-1 lg:col-span-2 text-4xl lg:text-5xl xl:text-6xl font-medium ">

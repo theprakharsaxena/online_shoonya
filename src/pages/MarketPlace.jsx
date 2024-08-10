@@ -16,7 +16,7 @@ const MarketPlace = () => {
   return (
     <div className="w-full">
       <section className="max-w-screen-2xl mx-auto">
-        <div className="2xl:py-24 py-20 px-16">
+        <div className="2xl:py-28 py-24 px-16">
           <div className="flex justify-start min-h-[40vh] w-full relative mt-4 bg-[url('/program/marketplace_banner.webp')] bg-cover bg-no-repeat bg-right rounded-2xl">
             <div className="flex flex-col justify-center gap-4 p-8 text-[var(--bg-yellow)]">
               {" "}
