@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import useInView from "../../utils/useInView";
+import retreats2 from "../../assets/home/retreats2.mp4"
 
 const VideoPlayer = () => {
   const [ref, inView] = useInView();
@@ -24,7 +25,7 @@ const VideoPlayer = () => {
         muted
         loop
       >
-        <source src="/home/retreats2.mp4" type="video/mp4" />
+        <source src={retreats2} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* <div className="absolute bottom-4 right-4 bg-gray-800 text-white p-2 rounded">

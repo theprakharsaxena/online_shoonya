@@ -1,9 +1,11 @@
+import logo from "../../assets/about/logo.webp";
+
 const RotationalImage = () => {
   return (
     <div className="mt-8">
       <div id="circle-orbit-container">
         <div id="central-image">
-          <img src="/about/logo.webp" alt="Central" />
+          <img src={logo} alt="Central" />
         </div>
         <div id="inner-orbit">
           <div className="inner-orbit-cirlces"></div>

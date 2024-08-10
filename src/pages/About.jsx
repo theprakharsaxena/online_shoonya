@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { usePopup } from "../context/PopupContext";
 import RotationalImage from "../components/about/RotationalImage";
 import useInView from "../utils/useInView";
+import aboutbgDesign from "../assets/about/about_bg_design.png"
 
 const About = () => {
   const { toggleContactPopupState } = usePopup();
@@ -26,9 +27,8 @@ const About = () => {
             </div>
             <div
               ref={ref}
-              className={`w-full flex flex-col items-center gap-4 text-[var(--text-blue)] lg:h-[168px] ${
-                inView ? "animate-fade-up" : ""
-              }`}
+              className={`w-full flex flex-col items-center gap-4 text-[var(--text-blue)] lg:h-[168px] ${inView ? "animate-fade-up" : ""
+                }`}
             >
               <p className="text-3xl lg:text-3xl font-medium text-center">
                 Touching Stillness within you Leads to infinite possibilities
@@ -70,7 +70,7 @@ const About = () => {
               </p>
             </div>
             <div className="hidden lg:flex justify-end xl:col-span-1 lg:col-span-2">
-              <img src="/about/about_bg_design.png" alt="logo" className="" />
+              <img src={aboutbgDesign} alt="logo" className="" />
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">

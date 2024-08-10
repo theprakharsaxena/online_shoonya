@@ -11,7 +11,7 @@ const MainSection = () => {
   return (
     <section className="max-w-screen-2xl mx-auto">
       <div className="mx-10 sm:mx-12 md:mx-14 lg:mx-16 py-24 2xl:py-28 2xl:h-[768px] sm:h-[668px] h-[768px]">
-        <div className="relative flex justify-center h-full bg-cover bg-no-repeat bg-center rounded-2xl bg-[url('/home/hero_bg_mobile.jpg')] md:bg-[url('/home/hero_background_2.webp')]">
+        <div className="relative flex justify-center h-full bg-cover bg-no-repeat bg-center rounded-2xl bgimage">
           <div className="flex flex-col space-y-4 p-8 text-[#fff7e3] justify-center">
             <h1
               ref={ref}
