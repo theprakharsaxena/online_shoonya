@@ -9,9 +9,7 @@ const OurProgram = ({ shortened, background }) => {
 
   return (
     <section className="max-w-screen-2xl mx-auto">
-      <div
-        className={`mx-10 sm:mx-12 md:mx-14 lg:mx-16 my-20 2xl:h-[768px] lg:h-[668px]`}
-      >
+      <div className={`mx-10 sm:mx-12 md:mx-14 lg:mx-16 my-20`}>
         <div className="flex flex-col space-y-14">
           <div
             className={`flex flex-col gap-2.5 w-full ${
@@ -28,7 +26,7 @@ const OurProgram = ({ shortened, background }) => {
               </p>
               <button
                 className="px-3 py-1 sm:px-4 sm:py-2 rounded-full border border-black flex items-center justify-center bg-white gap-2.5 hover:animate-fade-right"
-                onClick={() => navigate("/marketplace")}
+                onClick={() => navigate("/programs")}
               >
                 <p>View all</p>{" "}
                 <img

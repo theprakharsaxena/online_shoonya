@@ -23,7 +23,7 @@ const OurProduct = () => {
             <p className="font-sentinent text-5xl font-medium">Our Programs</p>
             <button
               className="px-4 py-2 rounded-full border border-black flex items-center justify-center bg-white gap-2.5 hover:animate-fade-right"
-              onClick={() => navigate("/marketplace")}
+              onClick={() => navigate("/programs")}
             >
               <p>View all</p> <img src={rightArrowSvg} alt="right_arrow" />
             </button>

@@ -43,7 +43,7 @@ const ProgramsPage = () => {
 
   return (
     <>
-      <div className="py-24 2xl:py-28">
+      <div className="py-24 2xl:py-28 mx-10 sm:mx-12 md:mx-14 lg:mx-16">
         <div className={landingPageStyles.hero}>
           <div className={utils.wrapper}>
             <div className={styles.filterSection}>
